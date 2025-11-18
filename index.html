@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Головна - Vite + Tailwind</title>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <!-- HEADER буде підставлений через main.js -->
+    <div id="header"></div>
+
+    <main class="flex-1 max-w-4xl mx-auto px-4 py-12">
+        <!-- Hero -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Вітаємо! 👋</h1>
+            <p class="text-lg text-gray-600">Простий проект на Vite + Tailwind v4</p>
+        </section>
+
+        <!-- Counter -->
+        <section class="bg-white p-8 rounded-lg shadow max-w-md mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Лічильник</h2>
+            <div class="flex items-center justify-center gap-4 mb-4">
+                <button id="decrementBtn"
+                    class="bg-red-500 text-white w-12 h-12 rounded-full text-2xl hover:bg-red-600">-</button>
+                <span id="counterValue" class="text-4xl font-bold">0</span>
+                <button id="incrementBtn"
+                    class="bg-green-500 text-white w-12 h-12 rounded-full text-2xl hover:bg-green-600">+</button>
+            </div>
+            <button id="resetBtn" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+                Скинути
+            </button>
+        </section>
+    </main>
+
+    <!-- FOOTER буде підставлений через main.js -->
+    <div id="footer"></div>
+
+    <!-- Один модульний скрипт для цієї сторінки -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

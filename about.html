@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про нас - Vite + Tailwind</title>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <!-- HEADER буде підставлений через about.js -->
+    <div id="header"></div>
+
+    <main class="flex-1 max-w-4xl mx-auto px-4 py-12">
+        <section class="bg-white p-8 rounded-lg shadow">
+            <h1 class="text-3xl font-bold mb-6">Про проект 📚</h1>
+
+            <div class="space-y-4 text-gray-700">
+                <p>Це демонстраційний проект для навчання студентів.</p>
+
+                <div>
+                    <h2 class="text-xl font-bold mb-2">Використані технології:</h2>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Vite - швидка збірка</li>
+                        <li>Tailwind CSS v4 - стилізація</li>
+                        <li>Vanilla JavaScript - інтерактивність</li>
+                        <li>ES модулі - компоненти</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER буде підставлений через about.js -->
+    <div id="footer"></div>
+
+    <!-- Окремий модульний скрипт для сторінки Про нас -->
+    <script type="module" src="/src/about.js"></script>
+</body>
+
+</html>
